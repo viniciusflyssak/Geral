@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2020/04/06 16:15:05.000.867,=C:\Users\Vinicius\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/04/06 16:17:48.000.908,C:\Users\Vinicius\Desktop\Imcdelphi\Imc.dfm=C:\Users\Vinicius\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2020/04/06 16:17:48.000.908,C:\Users\Vinicius\Desktop\Imcdelphi\Imc.pas=C:\Users\Vinicius\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/04/06 16:18:06.000.198,C:\Users\Vinicius\Desktop\Imcdelphi\Imcdelphi.dproj=C:\Users\Vinicius\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2020/04/06 17:24:35.000.194,=C:\Users\Vinicius\Desktop\Imcdelphi\Unit1.pas</Transaction>
+  </Transactions>
+	<ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="Imc.pas"/>
+    <File Path="Imc.dfm"/>
+    <File Path="calculoss.pas"/>
+    <File Path="calculoss.dfm"/>
+  </ProjectSortOrder>
+</BorlandProject>

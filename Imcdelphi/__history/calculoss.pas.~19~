@@ -1,0 +1,51 @@
+unit calculoss;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls, Imc;
+
+type
+  Tcalculos = class(TForm)
+    fundo: TPanel;
+    Logoimc: TStaticText;
+    ealtura: TEdit;
+    epeso: TEdit;
+    altura: TStaticText;
+    peso: TStaticText;
+    calcular: TButton;
+    Sexo: TRadioGroup;
+    procedure calcularClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  calculos: Tcalculos;
+
+implementation
+
+{$R *.dfm}
+
+procedure Tcalculos.calcularClick(Sender: TObject);
+var peso, altura, valorr: real;
+begin
+peso :=strtofloat (epeso.text);
+altura :=strtofloat (ealtura.Text);
+valorr := peso / (altura*altura);
+Imcform.resultadovalor.text := floattostr (valorr);
+if valorr > 27.8  then
+imcform.classificacao.caption := 'teste';
+begin
+if valorr > 31.1 then
+imcform.classificacao.caption := 'teste2';
+end;
+
+Imcform.Showmodal;
+
+end;
+
+end.

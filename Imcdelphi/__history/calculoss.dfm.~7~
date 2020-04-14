@@ -1,0 +1,110 @@
+object calculos: Tcalculos
+  Left = 0
+  Top = 0
+  Caption = 'calculos'
+  ClientHeight = 201
+  ClientWidth = 447
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object fundo: TPanel
+    Left = 0
+    Top = 0
+    Width = 447
+    Height = 201
+    Align = alClient
+    Color = 10810788
+    ParentBackground = False
+    TabOrder = 0
+    object valorteste: TLabel
+      Left = 344
+      Top = 68
+      Width = 24
+      Height = 13
+      Caption = 'valor'
+      Color = 10876324
+      ParentColor = False
+    end
+    object Logoimc: TStaticText
+      Left = 128
+      Top = 8
+      Width = 187
+      Height = 34
+      Caption = 'Calculadora IMC'
+      Color = 10876324
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -24
+      Font.Name = 'Small Fonts'
+      Font.Style = []
+      ParentColor = False
+      ParentFont = False
+      TabOrder = 0
+    end
+    object ealtura: TEdit
+      Left = 56
+      Top = 91
+      Width = 121
+      Height = 21
+      TabOrder = 1
+    end
+    object epeso: TEdit
+      Left = 56
+      Top = 152
+      Width = 121
+      Height = 21
+      TabOrder = 2
+    end
+    object altura: TStaticText
+      Left = 56
+      Top = 68
+      Width = 95
+      Height = 17
+      Caption = 'Insira a sua altura:'
+      Color = 10876324
+      ParentColor = False
+      TabOrder = 3
+    end
+    object peso: TStaticText
+      Left = 56
+      Top = 129
+      Width = 90
+      Height = 17
+      Caption = 'Insira o seu peso:'
+      Color = 10876324
+      ParentColor = False
+      TabOrder = 4
+    end
+    object calcular: TButton
+      Left = 272
+      Top = 121
+      Width = 75
+      Height = 25
+      Caption = 'Calcular'
+      TabOrder = 5
+      OnClick = calcularClick
+    end
+    object pag: TButton
+      Left = 272
+      Top = 152
+      Width = 75
+      Height = 25
+      Caption = 'pagina 2'
+      TabOrder = 6
+      OnClick = pagClick
+    end
+    object valortest: TEdit
+      Left = 226
+      Top = 87
+      Width = 121
+      Height = 21
+      TabOrder = 7
+    end
+  end
+end

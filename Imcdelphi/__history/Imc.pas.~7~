@@ -1,0 +1,35 @@
+unit Imc;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls, calculoss;
+
+type
+  TImcform = class(TForm)
+    Presultados: TPanel;
+    Resultado: TLabel;
+    valor: TLabel;
+    cor: TGroupBox;
+    pag2: TButton;
+    procedure pag2Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Imcform: TImcform;
+
+implementation
+
+{$R *.dfm}
+
+procedure TImcform.pag2Click(Sender: TObject);
+begin
+calculos.ShowModal
+end;
+
+end.

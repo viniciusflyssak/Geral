@@ -1,0 +1,16 @@
+program Imcdelphi;
+
+uses
+  Vcl.Forms,
+ calculoss in 'calculoss.pas' {calculos},
+  Imc in 'Imc.pas' {Imcform};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TImcform, Imcform);
+  Application.CreateForm(Tcalculos, calculos);
+  Application.Run;
+end.

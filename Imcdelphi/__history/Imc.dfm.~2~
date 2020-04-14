@@ -1,0 +1,56 @@
+object Imcform: TImcform
+  Left = 0
+  Top = 0
+  Caption = 'Imcform'
+  ClientHeight = 201
+  ClientWidth = 447
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Presultados: TPanel
+    Left = 0
+    Top = 0
+    Width = 447
+    Height = 201
+    Align = alClient
+    TabOrder = 0
+    ExplicitLeft = 8
+    ExplicitTop = 8
+    ExplicitHeight = 182
+    object Resultado: TLabel
+      Left = 152
+      Top = 8
+      Width = 127
+      Height = 31
+      Caption = 'Resultado:'
+      Color = clLime
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -27
+      Font.Name = 'Times New Roman'
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+    end
+    object valor: TLabel
+      Left = 2
+      Top = 41
+      Width = 37
+      Height = 21
+      Caption = 'valor'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -19
+      Font.Name = 'Times New Roman'
+      Font.Style = []
+      ParentFont = False
+      OnContextPopup = valorContextPopup
+    end
+  end
+end

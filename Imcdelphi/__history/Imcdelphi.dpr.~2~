@@ -1,0 +1,14 @@
+program Imcdelphi;
+
+uses
+  Vcl.Forms,
+  Imc in 'Imc.pas' {Imcform};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TImcform, Imcform);
+  Application.Run;
+end.

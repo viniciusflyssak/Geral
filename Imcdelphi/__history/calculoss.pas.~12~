@@ -1,0 +1,44 @@
+unit calculoss;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls;
+
+type
+  Tcalculos = class(TForm)
+    fundo: TPanel;
+    Logoimc: TStaticText;
+    ealtura: TEdit;
+    epeso: TEdit;
+    altura: TStaticText;
+    peso: TStaticText;
+    calcular: TButton;
+    lvalor: TLabel;
+    valortest: TEdit;
+    procedure calcularClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  calculos: Tcalculos;
+
+implementation
+
+{$R *.dfm}
+
+procedure Tcalculos.calcularClick(Sender: TObject);
+var peso, altura, valorr: real;
+begin
+peso :=strtofloat (epeso.text);
+altura :=strtofloat (ealtura.Text);
+valorr := peso / (altura*altura);
+valortest.text := floattostr (valorr);
+
+end;
+
+end.
